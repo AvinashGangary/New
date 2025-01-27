@@ -79,7 +79,7 @@ def check_user_approval(user_id):
     return False
 
 def send_not_approved_message(chat_id):
-    bot.send_message(chat_id, "*YOU ARE NOT APPROVED BUY ACESS:-@KRISHNAVIPOWNER*", parse_mode='Markdown')
+    bot.send_message(chat_id, "*YOU ARE NOT APPROVED BUY ACESS:-@KINGxVIPER*", parse_mode='Markdown')
 
 @bot.message_handler(commands=['approve', 'disapprove'])
 def approve_or_disapprove_user(message):
@@ -252,7 +252,7 @@ def handle_message(message):
         bot.reply_to(message, "*🚀Attack Selected*", parse_mode='Markdown')
         attack_command(message)
     elif message.text == "💼ResellerShip":
-        bot.send_message(message.chat.id, "*FOR RESSELER SHIP DM :-@KRISHNAVIPOWNER*", parse_mode='Markdown')
+        bot.send_message(message.chat.id, "*FOR RESSELER SHIP DM :-@KINGxVIPER*", parse_mode='Markdown')
     elif message.text == "ℹ️ My Info":
         user_id = message.from_user.id
         user_data = users_collection.find_one({"user_id": user_id})
@@ -288,7 +288,7 @@ def handle_message(message):
 if __name__ == "__main__":
     asyncio_thread = Thread(target=start_asyncio_thread, daemon=True)
     asyncio_thread.start()
-    logging.info("KRISHNA SERVER RUNNING.....")
+    logging.info("KINGxVIPER SERVER RUNNING.....")
     while True:
         try:
             bot.polling(none_stop=True)
