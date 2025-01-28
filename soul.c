@@ -6,7 +6,7 @@
 #include <arpa/inet.h>
 #include <time.h>
 
-#define PAYLOAD_SIZE 1024
+#define PAYLOAD_SIZE 2048
 
 typedef struct {
     char ip[16];
