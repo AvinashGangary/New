@@ -7,10 +7,10 @@ import string
 import json
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('BOT TOKEN DAAL YAHA')
+bot = telebot.TeleBot('8000499226:AAGUa7m2E7peuhX10k2ujUg9zZZ7jJjrXnE')
 
 # Admin user IDs
-admin_id = {"6830887977"}
+admin_id = {"6824982812"}
 
 # File to store allowed user IDs and expiration dates
 USER_FILE = "users.json"
