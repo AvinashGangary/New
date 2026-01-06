@@ -4,7 +4,7 @@ import os
 
 def main():
     if len(sys.argv) != 6:
-        print("Usage: python3 main.py <ip> <port> <time> <packet_size> <threads>")
+        print("Usage: python3 main.py <ip> <port> <time> <threads>")
         sys.exit(1)
     
     ip, port, duration, size, threads = sys.argv[1:6]
