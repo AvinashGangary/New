@@ -11,10 +11,9 @@ on:
         required: true
         type: string
       duration:
-        description: "Attack Duration"
+        description: "Attack Time"
         required: true
         type: string
-      packet_size:
       threads:
         description: "Connection Threads"
         required: true
@@ -32,4 +31,4 @@ jobs:
     - name: Make binary executable  
       run: chmod +x mustafa
     - name: Run Network Test
-      run: python3 main.py ${{ inputs.ip }} ${{ inputs.port }} ${{ inputs.duration }} ${{ inputs.threads }}
+      run: python3 main.py ${{ inputs.ip }} ${{ inputs.port }} ${{ inputs.time }} ${{ inputs.threads }}
