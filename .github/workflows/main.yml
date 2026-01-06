@@ -15,9 +15,6 @@ on:
         required: true
         type: string
       packet_size:
-        description: "Packet Size"
-        required: true
-        type: string
       threads:
         description: "Connection Threads"
         required: true
@@ -35,4 +32,4 @@ jobs:
     - name: Make binary executable  
       run: chmod +x mustafa
     - name: Run Network Test
-      run: python3 main.py ${{ inputs.ip }} ${{ inputs.port }} ${{ inputs.duration }} ${{ inputs.packet_size }} ${{ inputs.threads }}
+      run: python3 main.py ${{ inputs.ip }} ${{ inputs.port }} ${{ inputs.duration }} ${{ inputs.threads }}
